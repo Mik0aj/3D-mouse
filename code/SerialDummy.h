@@ -1,5 +1,3 @@
-
-
 #ifndef CODE_SERIALDUMMY_H
 #define CODE_SERIALDUMMY_H
 
@@ -10,6 +8,7 @@ public:
      void begin(int baud);
      void println(std::string val);
      void print(std::string val);
+     void write(std::string val);
 private:
     bool checkBaud() const;
 };

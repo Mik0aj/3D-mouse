@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include "SerialDummy.h"
 
@@ -58,5 +56,11 @@ bool SerialDummy::checkBaud() const {
         else{
             std::cout << "Invalid baud rate";
         }
+    }
+}
+
+void SerialDummy::write(std::string val) {
+    if (checkBaud()){
+        std::cout << "Arduino write "<< val;
     }
 }

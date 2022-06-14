@@ -2,22 +2,63 @@
 #include "SerialDummy.h"
 #include "ArduinoDummy.h"
 using namespace ArduinoDummy;
-SerialDummy Serial;
 
+class SerialTest{
 
-void setup(){
-    Serial.begin(9600);
+    // This part of code can be copied into Arduino without modifying
+
+    void setup(){
+        Serial.begin(9600);
+    };
+
+    void loop(){
+        Serial.println("hello ");
+        delay(10000);
+        Serial.println("world");
+    };
+
+    //
+    SerialDummy Serial;
+    void before(){
+        Serial=SerialDummy();
+    }
+public:
+    void run(){
+        before();
+        setup();
+        loop();
+    }
 };
 
-void loop(){
-    Serial.println("hello");
-    delay(1000);
-    Serial.print("hello");
-};
+class SerialTestNoBaud{
 
+    // This part of code can be copied into Arduino without modifying
+
+    void setup(){
+        //Serial.begin(9600);
+    };
+
+    void loop(){
+        Serial.println("TEST");
+    };
+
+    //
+    SerialDummy Serial;
+    void before(){
+        Serial=SerialDummy();
+    }
+public:
+    void run(){
+        before();
+        setup();
+        loop();
+    }
+};
 
 int main() {
-    setup();
-    loop();
+    SerialTest test = SerialTest();
+    test.run();
+    SerialTestNoBaud test_two = SerialTestNoBaud();
+    test_two.run();
     return 0;
 }

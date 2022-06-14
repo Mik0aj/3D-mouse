@@ -67,6 +67,12 @@ build CMakeFiles/code.dir/SerialDummy.cpp.o: CXX_COMPILER__code_Debug /home/miko
   OBJECT_DIR = CMakeFiles/code.dir
   OBJECT_FILE_DIR = CMakeFiles/code.dir
 
+build CMakeFiles/code.dir/GyroDummy.cpp.o: CXX_COMPILER__code_Debug /home/mikoaj/Documents/STUDIA/Praca$ dyplomowa/projekt/code/GyroDummy.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles/code.dir/GyroDummy.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/code.dir
+  OBJECT_FILE_DIR = CMakeFiles/code.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target code
@@ -75,7 +81,7 @@ build CMakeFiles/code.dir/SerialDummy.cpp.o: CXX_COMPILER__code_Debug /home/miko
 #############################################
 # Link the executable code
 
-build code: CXX_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/main.cpp.o CMakeFiles/code.dir/ArduinoDummy.cpp.o CMakeFiles/code.dir/SerialDummy.cpp.o
+build code: CXX_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/main.cpp.o CMakeFiles/code.dir/ArduinoDummy.cpp.o CMakeFiles/code.dir/SerialDummy.cpp.o CMakeFiles/code.dir/GyroDummy.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/code.dir
   POST_BUILD = :
