@@ -3,4 +3,4 @@ project(code)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(code main.cpp ArduinoDummy.cpp ArduinoDummy.h SerialDummy.cpp SerialDummy.h GyroDummy.cpp GyroDummy.h)
+add_executable(code main.cpp ArduinoDummy.cpp ArduinoDummy.h GyroDummy.cpp GyroDummy.h)
