@@ -1,11 +1,152 @@
 #include "I2Cdev.h"
 #include "MPU6050_6Axis_MotionApps_V6_12.h"
 #include "Wire.h"
-#include <Joystick.h>
 #include "ArduinoSTL.h"
 #include "array"
 #include <deque>
 #include <pt.h>
+
+class JoystickEmulator {
+public:
+  virtual void setXYZ(int index, long value) = 0;
+  virtual void setRXRYRZ(int index, long value) = 0;
+  virtual void send() = 0;
+  virtual void begin() = 0;
+
+  virtual void setXAxisRange(int MIN_X, int MAX_X) = 0;
+  virtual void setYAxisRange(int MIN_X, int MAX_X) = 0;
+  virtual void setZAxisRange(int MIN_X, int MAX_X) = 0;
+
+  virtual void setRxAxisRange(int MIN_X, int MAX_X) = 0;
+  virtual void setRyAxisRange(int MIN_X, int MAX_X) = 0;
+  virtual void setRzAxisRange(int MIN_X, int MAX_X) = 0;
+};
+
+// #define XINPUT_LIBRARY
+#ifdef XINPUT_LIBRARY
+#include <XInput.h>
+class XinputAdapter : public JoystickEmulator {
+public:
+  void setXYZ(int index, long value) override {
+    switch (index) {
+      case 0:
+        XInput.setJoystickX(JOY_LEFT, value, false);
+        break;
+      case 1:
+        XInput.setJoystickY(JOY_LEFT, value, false);
+        break;
+      case 2:
+        XInput.setTrigger(TRIGGER_LEFT, value);
+        break;
+      default:
+        break;
+    }
+  }
+  void setRXRYRZ(int index, long value) override {
+    switch (index) {
+      case 0:
+        XInput.setJoystickX(JOY_RIGHT, value, false);
+        break;
+      case 1:
+        XInput.setJoystickY(JOY_RIGHT, value, false);
+        break;
+      case 2:
+        XInput.setTrigger(TRIGGER_RIGHT, value);
+        break;
+      default:
+        break;
+    }
+  }
+  void begin() override {
+    XInput.begin();
+  }
+
+  void send() override {
+    XInput.send();
+  }
+
+  void setXAxisRange(int MIN_X, int MAX_X) override {
+    XInput.setRange(JOY_LEFT, MIN_X, MAX_X);
+  }
+  void setYAxisRange(int MIN_X, int MAX_X) override {
+    XInput.setRange(JOY_LEFT, MIN_X, MAX_X);
+  }
+  void setZAxisRange(int MIN_X, int MAX_X) override {
+    XInput.setRange(TRIGGER_LEFT, MIN_X, MAX_X);
+  }
+
+  void setRxAxisRange(int MIN_X, int MAX_X) override {
+    XInput.setRange(JOY_RIGHT, MIN_X, MAX_X);
+  }
+  void setRyAxisRange(int MIN_X, int MAX_X) override {
+    XInput.setRange(JOY_RIGHT, MIN_X, MAX_X);
+  }
+  void setRzAxisRange(int MIN_X, int MAX_X) override {
+    XInput.setRange(TRIGGER_RIGHT, MIN_X, MAX_X);
+  }
+};
+#endif
+
+#define JOYSTICK_LIBRARY
+#ifdef JOYSTICK_LIBRARY
+#include <Joystick.h>
+
+class JoystickLibraryAdapter : public JoystickEmulator {
+  std::array<void (Joystick_::*)(long int), 3> joystickXYZsetters;
+  std::array<void (Joystick_::*)(long int), 3> joystickRXRYRZsetters;
+  Joystick_ *joystick;
+public:
+  JoystickLibraryAdapter(Joystick_ *j) {
+    joystick = j;
+    // axis numbers set to my preference
+    joystickXYZsetters.at(2) = { &joystick->setXAxis };
+    joystickXYZsetters.at(1) = { &joystick->setYAxis };
+    joystickXYZsetters.at(0) = { &joystick->setZAxis };
+    joystickRXRYRZsetters.at(0) = { &joystick->setRxAxis };
+    joystickRXRYRZsetters.at(1) = { &joystick->setRyAxis };
+    joystickRXRYRZsetters.at(2) = { &joystick->setRzAxis };
+  };
+
+  void setXYZ(int index, long value) override {
+    (joystick->*joystickXYZsetters.at(index))(value);
+  }
+  void setRXRYRZ(int index, long value) override {
+    (joystick->*joystickRXRYRZsetters.at(index))(value);
+  }
+
+  void send() override {
+    joystick->sendState();
+  }
+  void begin() override {
+    joystick->begin();
+  }
+
+  void setXAxisRange(int MIN_X, int MAX_X) {
+    joystick->setXAxisRange(MIN_X, MAX_X);
+  }
+  void setYAxisRange(int MIN_Y, int MAX_Y) {
+    joystick->setZAxisRange(MIN_Y, MAX_Y);
+  }
+  void setZAxisRange(int MIN_Z, int MAX_Z) {
+    joystick->setYAxisRange(MIN_Z, MAX_Z);
+  }
+
+  void setRxAxisRange(int MIN_X, int MAX_X) {
+    joystick->setRxAxisRange(MIN_X, MAX_X);
+  }
+  void setRyAxisRange(int MIN_Y, int MAX_Y) {
+    joystick->setRzAxisRange(MIN_Y, MAX_Y);
+  }
+  void setRzAxisRange(int MIN_Z, int MAX_Z) {
+    joystick->setRyAxisRange(MIN_Z, MAX_Z);
+  }
+};
+Joystick_ j{ 0x06, JOYSTICK_TYPE_MULTI_AXIS, 0, 0, true, true, true, true, true, true, false, false, false, false, false };
+
+// only axis
+#endif
+const JoystickEmulator &joystick = JoystickLibraryAdapter(&j);
+// const JoystickEmulator &joystick = XinputAdapter();
 
 // szablon uzupełnić napisać
 // wstęp motywacja
@@ -15,10 +156,7 @@
 // uruchuchomienie/intrukcja obsługi
 // wnioski rozwinięcie
 
-
 MPU6050 mpu;
-// only axis
-Joystick_ joystick{ 0x06, JOYSTICK_TYPE_MULTI_AXIS, 0, 0, true, true, true, true, true, true, false, false, false, false, false };
 
 // MPU control/status vars
 constexpr int I2C_CLOCK{ 400000 };
@@ -50,6 +188,7 @@ enum TIMING {
   JOYSTICK_THREAD_TIMER = 5,
   MPU_THREAD_TIMER = 2,
   MODE_BUTTON_INTERRUPT_TIMER = 100,
+  RGB_THREAD_TIMER = 2,
 };
 enum class Mode {
   XYZ,
@@ -58,7 +197,7 @@ enum class Mode {
   NOT_BROADCASTING,
 };
 
-static struct pt printThread, joystickThread, mpuThread;
+static pt printThread, joystickThread, mpuThread, rgbThread;
 
 uint8_t devStatus;       // return status after each device operation (0 = success, !0 = error)
 uint16_t packetSize;     // expected DMP packet size (default is 42 bytes)
@@ -67,20 +206,18 @@ uint8_t fifoBuffer[64];  // FIFO storage buffer
 Quaternion q;            // [w, x, y, z]         quaternion container
 VectorFloat gravity;     // [x, y, z]            gravity vector
 float ypr[3];            // [yaw, pitch, roll]   yaw/pitch/roll container and gravity vector
-typedef std::deque<float> axis;
-std::array<axis, 3> allAxis;
-std::array<float, 3> filteredValues;  //Mpu for one iteration sends max values
-std::array<float, 3> offsets;         //Mpu for one iteration sends max values
 volatile Mode deviceMode{ Mode::rXrYrZ };
 volatile Mode broadcastMode{ Mode::NOT_BROADCASTING };
-std::array<void (Joystick_::*)(long int), 3> joystickXYZsetters;
-std::array<void (Joystick_::*)(long int), 3> joystickRXRYRZsetters;
+typedef std::deque<float> axis;
+std::array<axis, 3> allAxis;
+std::array<float, 3> deviceValues;
 std::array<int, 3> pinsRGB;
 
 void setup() {
   Wire.begin();
   Wire.setClock(I2C_CLOCK);  // 400kHz I2C clock. Comment this line if having compilation difficulties
   Serial.begin(BAUD);
+  while(!Serial); // wait to open serial
   Serial.println(F("Initializing I2C devices..."));
   mpu.initialize();
   devStatus = mpu.dmpInitialize();
@@ -91,9 +228,11 @@ void setup() {
   mpu.setXGyroOffset(GYRO_X);
   mpu.setYGyroOffset(GYRO_Y);
   mpu.setZGyroOffset(GYRO_Z);
+
   mpu.setXAccelOffset(ACCEL_X);
   mpu.setYAccelOffset(ACCEL_Y);
   mpu.setZAccelOffset(ACCEL_Z);
+
   Serial.println(F("Enabling DMP..."));
   mpu.setDMPEnabled(true);
   packetSize = mpu.dmpGetFIFOPacketSize();
@@ -111,17 +250,10 @@ void setup() {
   joystick.setXAxisRange(MIN_X, MAX_X);
   joystick.setYAxisRange(MIN_Y, MAX_Y);
   joystick.setZAxisRange(MIN_Z, MAX_Z);
+
   joystick.setRxAxisRange(MIN_X, MAX_X);
   joystick.setRyAxisRange(MIN_Y, MAX_Y);
   joystick.setRzAxisRange(MIN_Z, MAX_Z);
-
-  // axis numbers set to my preference
-  joystickXYZsetters.at(2) = { &joystick.setXAxis };
-  joystickXYZsetters.at(1) = { &joystick.setYAxis };
-  joystickXYZsetters.at(0) = { &joystick.setZAxis };
-  joystickRXRYRZsetters.at(0) = { &joystick.setRxAxis };
-  joystickRXRYRZsetters.at(1) = { &joystick.setRyAxis };
-  joystickRXRYRZsetters.at(2) = { &joystick.setRzAxis };
 
   pinsRGB.at(0) = { RED_PIN };
   pinsRGB.at(1) = { GREEN_PIN };
@@ -130,9 +262,11 @@ void setup() {
   PT_INIT(&printThread);
   PT_INIT(&joystickThread);
   PT_INIT(&mpuThread);
+  PT_INIT(&rgbThread);
+
+  deviceReady();  // device flashes RGB to signal its ready
 }
 
-// todo introduce constant
 void modeChange() {
   static unsigned long last_interrupt_time = 0;
   if (millis() - last_interrupt_time > MODE_BUTTON_INTERRUPT_TIMER) {
@@ -150,12 +284,10 @@ void modeChange() {
         break;
     }
     // need to reset axis
-    joystick.setXAxis(0);
-    joystick.setYAxis(0);
-    joystick.setZAxis(0);
-    joystick.setRxAxis(0);
-    joystick.setRyAxis(0);
-    joystick.setRzAxis(0);
+    for (int index = 0; index < 3; index++) {
+      joystick.setXYZ(index, 0);
+      joystick.setRXRYRZ(index, 0);
+    }
   }
   last_interrupt_time = millis();
 }
@@ -170,9 +302,18 @@ void deviceFailed(int code) {
     Serial.print(code);
     Serial.println(F(")"));
     delay(1000);
-    analogWrite(RED_PIN, 1024);
+    analogWrite(RED_PIN, 255);
     delay(1000);
     analogWrite(RED_PIN, 0);
+  }
+}
+
+void deviceReady() {
+  Serial.print("Device ready ");
+  for (int pinIndex; pinIndex < 3; pinIndex++) {
+    analogWrite(pinsRGB.at(pinIndex), 255);
+    delay(300);
+    analogWrite(pinsRGB.at(pinIndex), 0);
   }
 }
 
@@ -188,12 +329,16 @@ float median(axis &currentAxis) {
   return sum - max - min;
 }
 
-static void protothreadPrintSerial(struct pt *pt) {
+void rgbUpdate(int pinIndex, int value) {
+  analogWrite(pinsRGB.at(pinIndex), map(value, -2000, 2000, 0, 255));
+}
+
+static void protothreadPrintSerial(pt &protoThread, const std::array<float, 3> &deviceValues, volatile const Mode &deviceMode, volatile const Mode &broadcastMode) {
   static unsigned long lastTimePrint = 0;
-  PT_BEGIN(pt);
+  PT_BEGIN(&protoThread);
   while (1) {
     lastTimePrint = millis();
-    PT_WAIT_UNTIL(pt, millis() - lastTimePrint > SERIAL_THREAD_TIMER);
+    PT_WAIT_UNTIL(&protoThread, millis() - lastTimePrint > SERIAL_THREAD_TIMER);
     Serial.print(millis());
     Serial.print('\t');
     switch (broadcastMode) {
@@ -225,34 +370,30 @@ static void protothreadPrintSerial(struct pt *pt) {
     }
     Serial.print('\t');
     for (auto axisNumber = 0; axisNumber < 3; axisNumber++) {
-      Serial.print(filteredValues.at(axisNumber) - offsets.at(axisNumber));
+      Serial.print(deviceValues.at(axisNumber) * 100);
       Serial.print('\t');
     }
     Serial.println();
-    PT_END(pt);
+    PT_END(&protoThread);
   }
 }
 
-void rgbUpdate(int pinIndex, int value) {
-  analogWrite(pinsRGB.at(pinIndex), map(value, -2000, 2000, 0, 255));
-}
-
-static void protothreadJoystickBroadcast(struct pt *pt) {
+static void protothreadJoystickBroadcast(pt &protoThread, const std::array<float, 3> &deviceValues, volatile const Mode &deviceMode, volatile const Mode &broadcastMode) {
   static unsigned long JoystickBroadcast = 0;
-  PT_BEGIN(pt);
+  PT_BEGIN(&protoThread);
   while (1) {
     JoystickBroadcast = millis();
-    PT_WAIT_UNTIL(pt, millis() - JoystickBroadcast > JOYSTICK_THREAD_TIMER);
+    PT_WAIT_UNTIL(&protoThread, millis() - JoystickBroadcast > JOYSTICK_THREAD_TIMER);
     switch (broadcastMode) {
       case Mode::BROADCASTING:
         for (int setterIndex{ 0 }; setterIndex < 3; setterIndex++) {
-          void (Joystick_::*currentSetter)(long int);
+          auto val = deviceValues.at(setterIndex) * 100;
           switch (deviceMode) {
             case Mode::XYZ:
-              currentSetter = joystickXYZsetters.at(setterIndex);
+              joystick.setXYZ(setterIndex, val);
               break;
             case Mode::rXrYrZ:
-              currentSetter = joystickRXRYRZsetters.at(setterIndex);
+              joystick.setRXRYRZ(setterIndex, val);
               break;
             default:
               Serial.print("Wrong mode chceck: ");
@@ -260,10 +401,31 @@ static void protothreadJoystickBroadcast(struct pt *pt) {
               deviceFailed(10);
               break;
           }
-          auto val = (filteredValues.at(setterIndex) - offsets.at(setterIndex)) * 100;
-          rgbUpdate(setterIndex, val);
-          (joystick.*currentSetter)(val);
-          joystick.sendState();
+          joystick.send();
+        }
+        break;
+      case Mode::NOT_BROADCASTING:
+        break;
+      default:
+        Serial.print("Wrong mode chceck: ");
+        Serial.print(__LINE__);
+        deviceFailed(10);
+        break;
+    }
+  }
+  PT_END(&protoThread);
+}
+
+static void protothreadRGB(pt &protoThread, const std::array<float, 3> &deviceValues, volatile const Mode &broadcastMode) {
+  static unsigned long rgbTimer = 0;
+  PT_BEGIN(&protoThread);
+  while (1) {
+    rgbTimer = millis();
+    PT_WAIT_UNTIL(&protoThread, millis() - rgbTimer > RGB_THREAD_TIMER);
+    switch (broadcastMode) {
+      case Mode::BROADCASTING:
+        for (int pinIndex{ 0 }; pinIndex < pinsRGB.size(); pinIndex++) {
+          rgbUpdate(pinIndex, deviceValues.at(pinIndex));
         }
         break;
       case Mode::NOT_BROADCASTING:
@@ -278,18 +440,18 @@ static void protothreadJoystickBroadcast(struct pt *pt) {
         break;
     }
   }
-  PT_END(pt);
+  PT_END(&protoThread);
 }
 
-static void protothreadMpuUpdate(struct pt *pt) {
+static void protothreadMpuUpdate(pt &protoThread, std::array<float, 3> &deviceValues, volatile const Mode &broadcastMode) {
   static unsigned long lastMpuUpdate = 0;
-  PT_BEGIN(pt);
+  static std::array<float, 3> offsets;
+  PT_BEGIN(&protoThread);
   while (1) {
     lastMpuUpdate = millis();
-    PT_WAIT_UNTIL(pt, millis() - lastMpuUpdate > MPU_THREAD_TIMER);
-    if (broadcastMode == Mode::NOT_BROADCASTING) {
-      offsets = { filteredValues };
-    }
+    std::array<float, 3> filteredValues;  //Mpu for one iteration sends max values
+    // timing between 15 - 55 ms results in buffer error
+    PT_WAIT_UNTIL(&protoThread, millis() - lastMpuUpdate > MPU_THREAD_TIMER);
     if (mpu.dmpGetCurrentFIFOPacket(fifoBuffer)) {
       mpu.dmpGetQuaternion(&q, fifoBuffer);
       mpu.dmpGetGravity(&gravity, &q);
@@ -300,14 +462,21 @@ static void protothreadMpuUpdate(struct pt *pt) {
         currentAxis.push_back(ypr[i] * 180 / M_PI);
         filteredValues.at(i) = median(currentAxis);
       }
+      if (broadcastMode == Mode::NOT_BROADCASTING) {
+        offsets = { filteredValues };
+      }
+      for (int axisIndex{ 0 }; axisIndex < deviceValues.size(); axisIndex++) {
+        deviceValues.at(axisIndex) = { filteredValues.at(axisIndex) - offsets.at(axisIndex) };
+      }
     }
   }
-  PT_END(pt);
+  PT_END(&protoThread);
 }
 
 void loop() {
   broadcastMode = (digitalRead(BROADCAST_BUTTON)) ? Mode::NOT_BROADCASTING : Mode::BROADCASTING;
-  protothreadMpuUpdate(&mpuThread);
-  protothreadJoystickBroadcast(&joystickThread);
-  protothreadPrintSerial(&printThread);
+  protothreadMpuUpdate(mpuThread, deviceValues, broadcastMode);
+  protothreadJoystickBroadcast(joystickThread, deviceValues, deviceMode, broadcastMode);
+  protothreadPrintSerial(printThread, deviceValues, deviceMode, broadcastMode);
+  protothreadRGB(rgbThread, deviceValues, broadcastMode);
 }
