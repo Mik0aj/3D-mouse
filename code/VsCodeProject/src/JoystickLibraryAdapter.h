@@ -17,10 +17,9 @@ public:
     JoystickLibraryAdapter(JoystickInterface &j)
     {
         joystick = &j;
-        // axis numbers set to my preference
-        joystickXYZsetters.at(2) = &JoystickInterface::setXAxis;
+        joystickXYZsetters.at(0) = &JoystickInterface::setXAxis;
         joystickXYZsetters.at(1) = &JoystickInterface::setYAxis;
-        joystickXYZsetters.at(0) = &JoystickInterface::setZAxis;
+        joystickXYZsetters.at(2) = &JoystickInterface::setZAxis;
         joystickRXRYRZsetters.at(0) = &JoystickInterface::setRxAxis;
         joystickRXRYRZsetters.at(1) = &JoystickInterface::setRyAxis;
         joystickRXRYRZsetters.at(2) = &JoystickInterface::setRzAxis;
@@ -50,11 +49,11 @@ public:
     }
     void setYAxisRange(int MIN_Y, int MAX_Y)
     {
-        joystick->setZAxisRange(MIN_Y, MAX_Y);
+        joystick->setYAxisRange(MIN_Y, MAX_Y);
     }
     void setZAxisRange(int MIN_Z, int MAX_Z)
     {
-        joystick->setYAxisRange(MIN_Z, MAX_Z);
+        joystick->setZAxisRange(MIN_Z, MAX_Z);
     }
 
     void setRxAxisRange(int MIN_X, int MAX_X)
@@ -63,11 +62,11 @@ public:
     }
     void setRyAxisRange(int MIN_Y, int MAX_Y)
     {
-        joystick->setRzAxisRange(MIN_Y, MAX_Y);
+        joystick->setRyAxisRange(MIN_Y, MAX_Y);
     }
     void setRzAxisRange(int MIN_Z, int MAX_Z)
     {
-        joystick->setRyAxisRange(MIN_Z, MAX_Z);
+        joystick->setRzAxisRange(MIN_Z, MAX_Z);
     }
     ~JoystickLibraryAdapter(){};
 };
