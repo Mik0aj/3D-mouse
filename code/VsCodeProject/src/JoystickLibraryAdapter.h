@@ -1,37 +1,38 @@
 #ifndef JOYSTICK_LIBRARY_ADAPTER
 #define JOYSTICK_LIBRARY_ADAPTER
-#include <JoystickEmulator.h>
-#include <array>
 #ifdef ARDUINO
-#include <ArduinoSTL.h>
+#include <Joystick.h>
 #endif
+#include <JoystickEmulator.h>
 #include <mocks/JoystickInterface.h>
+
+typedef void (JoystickInterface::*Setter)(int32_t value);
 
 class JoystickLibraryAdapter : public JoystickEmulator
 {
-    std::array<void (JoystickInterface::*)(int32_t), 3> joystickXYZsetters;
-    std::array<void (JoystickInterface::*)(int32_t), 3> joystickRXRYRZsetters;
+    Setter joystickXYZsetters[3];
+    Setter joystickRXRYRZsetters[3];
     JoystickInterface *joystick;
 
 public:
     JoystickLibraryAdapter(JoystickInterface &j)
     {
         joystick = &j;
-        joystickXYZsetters.at(0) = &JoystickInterface::setXAxis;
-        joystickXYZsetters.at(1) = &JoystickInterface::setYAxis;
-        joystickXYZsetters.at(2) = &JoystickInterface::setZAxis;
-        joystickRXRYRZsetters.at(0) = &JoystickInterface::setRxAxis;
-        joystickRXRYRZsetters.at(1) = &JoystickInterface::setRyAxis;
-        joystickRXRYRZsetters.at(2) = &JoystickInterface::setRzAxis;
+        joystickXYZsetters[0] = &JoystickInterface::setXAxis;
+        joystickXYZsetters[1] = &JoystickInterface::setYAxis;
+        joystickXYZsetters[2] = &JoystickInterface::setZAxis;
+        joystickRXRYRZsetters[0] = &JoystickInterface::setRxAxis;
+        joystickRXRYRZsetters[1] = &JoystickInterface::setRyAxis;
+        joystickRXRYRZsetters[2] = &JoystickInterface::setRzAxis;
     }
 
     void setXYZ(int index, long value)
     {
-        (joystick->*joystickXYZsetters.at(index))(value);
+        (joystick->*joystickXYZsetters[index])(value);
     }
     void setRXRYRZ(int index, long value)
     {
-        (joystick->*joystickRXRYRZsetters.at(index))(value);
+        (joystick->*joystickRXRYRZsetters[index])(value);
     }
 
     void send()

@@ -1,6 +1,10 @@
 #ifndef JOYSTICK_INTERFACE
 #define JOYSTICK_INTERFACE
 
+// class uint8_t;
+// class int32_t;
+// class int8_t;
+// class int16_t;
 
 class JoystickInterface
 {

@@ -6,16 +6,15 @@
 #include <deque>
 #include <pt.h>
 
-#define XINPUT_LIBRARY
+// #define XINPUT_LIBRARY
 #ifdef XINPUT_LIBRARY
 #include <XInputAdapter.h>
 #include <XInput.h>
 XInputController x;
 JoystickEmulator &&joystick = XInputAdapter(x);
 #endif
-//#define JOYSTICK_LIBRARY
+#define JOYSTICK_LIBRARY
 #ifdef JOYSTICK_LIBRARY
-#include <Joystick.h>
 #include <JoystickLibraryAdapter.h>
 Joystick_ j{0x06, JOYSTICK_TYPE_MULTI_AXIS, 0, 0, true, true, true, true, true, true, false, false, false, false, false};
 JoystickEmulator &&joystick = JoystickLibraryAdapter(j);
