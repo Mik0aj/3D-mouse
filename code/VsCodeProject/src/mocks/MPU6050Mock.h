@@ -2,6 +2,15 @@
 #define MPU6050_MOCK
 #include <gmock/gmock.h>
 #include <mocks/MPUInterface.h>
+
+class Quaternion
+{
+};
+
+class VectorFloat
+{
+};
+
 class MPU6050Mock : public MPUInterface
 {
 public:

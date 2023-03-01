@@ -8,7 +8,7 @@
 class myTimer
 {
 public:
-    myTimer() { start = std::chrono::steady_clock::now();}
+    myTimer() { start = std::chrono::steady_clock::now(); }
     unsigned long operator()()
     {
         return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - start).count();
@@ -19,7 +19,7 @@ private:
     std::chrono::time_point<std::chrono::steady_clock> start;
 };
 
- myTimer millis;
+myTimer millis;
 #endif
 
 class Protothread
@@ -27,7 +27,6 @@ class Protothread
     unsigned long threadTimer{10};
     unsigned long timer{0};
     pt thread;
-    // Strategy strategy;
 
 public:
     Protothread() {}
@@ -51,10 +50,11 @@ public:
         {
             timer = millis();
             PT_WAIT_UNTIL(&thread, millis() - timer > threadTimer);
-            // strategy.execute();
+            operation();
         }
         PT_END(&thread);
     }
+    virtual void operation() = 0;
 };
 
 #endif // PROTOTHREAD
