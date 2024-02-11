@@ -61,37 +61,37 @@ Archive member included to satisfy reference by file (symbol)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_umulhisi3.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_muluhisi3.o) (__umulhisi3)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_divmodhi4.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__divmodhi4)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__divmodhi4)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_tablejump2.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__tablejump2__)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__tablejump2__)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_clear_bss.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__do_clear_bss)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__do_clear_bss)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_ctors.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__do_global_ctors)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__do_global_ctors)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_dtors.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__do_global_dtors)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__do_global_dtors)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_divmodhi4.o) (__udivmodhi4)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__subsf3)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__subsf3)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3.o) (__addsf3x)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan2.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (atan2)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (atan2)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan2.o) (atan)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__ltsf2)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__ltsf2)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__divsf3)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__divsf3)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3.o) (__divsf3x)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__fixsfsi)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__fixsfsi)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__fixunssfsi)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__fixunssfsi)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__floatunsisf)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__floatunsisf)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o) (__fp_cmp)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
@@ -111,31 +111,31 @@ Archive member included to satisfy reference by file (symbol)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_zero)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__gtsf2)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__gtsf2)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(inverse.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan.o) (inverse)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__mulsf3)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__mulsf3)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan.o) (__mulsf3x)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(sqrt.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (sqrt)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (sqrt)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(square.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan.o) (square)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(unordsf2.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (__unordsf2)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (__unordsf2)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_mpack.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(sqrt.o) (__fp_mpack)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_norm2.o)
                               /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(sqrt.o) (__fp_norm2)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(malloc.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (malloc)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (malloc)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(abort.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (abort)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (abort)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(memcmp.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (memcmp)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (memcmp)
 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(memcpy.o)
-                              /tmp/ccsu7vSi.ltrans0.ltrans.o (memcpy)
+                              /tmp/cchTFifx.ltrans0.ltrans.o (memcpy)
 
 Allocating common symbols
 Common symbol       size              file
@@ -148,7 +148,7 @@ Discarded input sections
  .data          0x0000000000000000        0x0 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega32u4.o
  .bss           0x0000000000000000        0x0 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega32u4.o
  .text          0x0000000000000000        0x0 .pio/build/leonardo/src/JoystickLibraryAdapter.cpp.o (symbol from plugin)
- .avr.prop      0x0000000000000000       0x1f /tmp/ccsu7vSi.ltrans0.ltrans.o
+ .avr.prop      0x0000000000000000       0x1f /tmp/cchTFifx.ltrans0.ltrans.o
  .text          0x0000000000000000        0x0 .pio/build/leonardo/src/XInputAdapter.cpp.o (symbol from plugin)
  .text          0x0000000000000000        0x0 .pio/build/leonardo/src/mouse.cpp.o (symbol from plugin)
  .gnu.linkonce.t._ZN22JoystickLibraryAdapter6setXYZEil
@@ -619,7 +619,7 @@ Linker script and memory map
 Address of section .data set to 0x800100
 LOAD /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega32u4.o
 LOAD .pio/build/leonardo/src/JoystickLibraryAdapter.cpp.o
-LOAD /tmp/ccsu7vSi.ltrans0.ltrans.o
+LOAD /tmp/cchTFifx.ltrans0.ltrans.o
 LOAD .pio/build/leonardo/src/XInputAdapter.cpp.o
 LOAD .pio/build/leonardo/src/mouse.cpp.o
 START GROUP
@@ -738,7 +738,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x5fa6
+.text           0x0000000000000000     0x5f0a
  *(.vectors)
  .vectors       0x0000000000000000       0xac /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega32u4.o
                 0x0000000000000000                __vectors
@@ -757,7 +757,7 @@ END GROUP
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
  *(.progmem*)
- .progmem.data  0x00000000000000da      0xd35 /tmp/ccsu7vSi.ltrans0.ltrans.o
+ .progmem.data  0x00000000000000da      0xd35 /tmp/cchTFifx.ltrans0.ltrans.o
                 0x0000000000000e10                . = ALIGN (0x2)
  *fill*         0x0000000000000e0f        0x1 
  *(.jumptables)
@@ -766,11 +766,11 @@ END GROUP
  *(.lowtext*)
                 0x0000000000000e10                __ctors_start = .
  *(.ctors)
- .ctors         0x0000000000000e10        0x2 /tmp/ccsu7vSi.ltrans0.ltrans.o
+ .ctors         0x0000000000000e10        0x2 /tmp/cchTFifx.ltrans0.ltrans.o
                 0x0000000000000e12                __ctors_end = .
                 0x0000000000000e12                __dtors_start = .
  *(.dtors)
- .dtors         0x0000000000000e12        0x2 /tmp/ccsu7vSi.ltrans0.ltrans.o
+ .dtors         0x0000000000000e12        0x2 /tmp/cchTFifx.ltrans0.ltrans.o
                 0x0000000000000e14                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
@@ -840,170 +840,170 @@ END GROUP
                 0x0000000000000e64                __vector_18
                 0x0000000000000e64                __vector_20
                 0x0000000000000e64                __vector_42
- .text          0x0000000000000e68     0x3838 /tmp/ccsu7vSi.ltrans0.ltrans.o
-                0x0000000000003d06                __vector_23
-                0x0000000000003d9a                __vector_7
-                0x0000000000003de8                __vector_4
-                0x0000000000003e36                __vector_3
-                0x0000000000003e84                __vector_2
-                0x0000000000003ed2                __vector_1
-                0x0000000000003f20                __vector_10
-                0x0000000000003ffe                __vector_11
-                0x0000000000004462                __vector_36
-                0x00000000000046a0                . = ALIGN (0x2)
+ .text          0x0000000000000e68     0x37e6 /tmp/cchTFifx.ltrans0.ltrans.o
+                0x0000000000003cb4                __vector_23
+                0x0000000000003d48                __vector_7
+                0x0000000000003d96                __vector_4
+                0x0000000000003de4                __vector_3
+                0x0000000000003e32                __vector_2
+                0x0000000000003e80                __vector_1
+                0x0000000000003ece                __vector_10
+                0x0000000000003fac                __vector_11
+                0x0000000000004410                __vector_36
+                0x000000000000464e                . = ALIGN (0x2)
  *(.text.*)
  .text.unlikely
-                0x00000000000046a0       0x54 /tmp/ccsu7vSi.ltrans0.ltrans.o
- .text.startup  0x00000000000046f4      0xe38 /tmp/ccsu7vSi.ltrans0.ltrans.o
-                0x0000000000004cea                main
- .text.exit     0x000000000000552c       0x48 /tmp/ccsu7vSi.ltrans0.ltrans.o
+                0x000000000000464e       0x54 /tmp/cchTFifx.ltrans0.ltrans.o
+ .text.startup  0x00000000000046a2      0xdee /tmp/cchTFifx.ltrans0.ltrans.o
+                0x0000000000004c8c                main
+ .text.exit     0x0000000000005490       0x48 /tmp/cchTFifx.ltrans0.ltrans.o
  .text.libgcc.div
-                0x0000000000005574       0x2e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_divmodsi4.o)
-                0x0000000000005574                __divmodsi4
+                0x00000000000054d8       0x2e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_divmodsi4.o)
+                0x00000000000054d8                __divmodsi4
  .text.libgcc.div
-                0x00000000000055a2       0x10 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_negsi2.o)
-                0x00000000000055a2                __negsi2
+                0x0000000000005506       0x10 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_negsi2.o)
+                0x0000000000005506                __negsi2
  .text.libgcc.mul
-                0x00000000000055b2       0x16 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_muluhisi3.o)
-                0x00000000000055b2                __muluhisi3
+                0x0000000000005516       0x16 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_muluhisi3.o)
+                0x0000000000005516                __muluhisi3
  .text.libgcc.div
-                0x00000000000055c8       0x44 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x00000000000055c8                __udivmodsi4
+                0x000000000000552c       0x44 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x000000000000552c                __udivmodsi4
  .text.libgcc.mul
-                0x000000000000560c       0x1e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_umulhisi3.o)
-                0x000000000000560c                __umulhisi3
+                0x0000000000005570       0x1e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_umulhisi3.o)
+                0x0000000000005570                __umulhisi3
  .text.libgcc.div
-                0x000000000000562a       0x28 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_divmodhi4.o)
-                0x000000000000562a                __divmodhi4
-                0x000000000000562a                _div
- .text.libgcc   0x0000000000005652        0xc /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_tablejump2.o)
-                0x0000000000005652                __tablejump2__
+                0x000000000000558e       0x28 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_divmodhi4.o)
+                0x000000000000558e                __divmodhi4
+                0x000000000000558e                _div
+ .text.libgcc   0x00000000000055b6        0xc /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000055b6                __tablejump2__
  .text.libgcc.div
-                0x000000000000565e       0x28 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x000000000000565e                __udivmodhi4
+                0x00000000000055c2       0x28 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x00000000000055c2                __udivmodhi4
  .text.avr-libc.fplib
-                0x0000000000005686        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
-                0x0000000000005686                __subsf3
-                0x0000000000005688                __addsf3
+                0x00000000000055ea        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                0x00000000000055ea                __subsf3
+                0x00000000000055ec                __addsf3
  .text.avr-libc.fplib
-                0x0000000000005694       0xcc /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
-                0x00000000000056b6                __addsf3x
+                0x00000000000055f8       0xcc /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                0x000000000000561a                __addsf3x
  .text.avr-libc.fplib
-                0x0000000000005760       0x86 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan2.o)
-                0x0000000000005786                atan2
+                0x00000000000056c4       0x86 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan2.o)
+                0x00000000000056ea                atan2
  .text.avr-libc.fplib
-                0x00000000000057e6       0x5e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan.o)
-                0x00000000000057e6                atan
+                0x000000000000574a       0x5e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(atan.o)
+                0x000000000000574a                atan
  .text.avr-libc.fplib
-                0x0000000000005844        0xa /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
-                0x0000000000005844                __lesf2
-                0x0000000000005844                __nesf2
-                0x0000000000005844                __eqsf2
-                0x0000000000005844                __cmpsf2
-                0x0000000000005844                __ltsf2
+                0x00000000000057a8        0xa /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                0x00000000000057a8                __lesf2
+                0x00000000000057a8                __nesf2
+                0x00000000000057a8                __eqsf2
+                0x00000000000057a8                __cmpsf2
+                0x00000000000057a8                __ltsf2
  .text.avr-libc.fplib
-                0x000000000000584e        0x8 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
-                0x000000000000584e                __divsf3
+                0x00000000000057b2        0x8 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                0x00000000000057b2                __divsf3
  .text.avr-libc.fplib
-                0x0000000000005856       0xdc /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
-                0x0000000000005876                __divsf3x
-                0x000000000000587c                __divsf3_pse
+                0x00000000000057ba       0xdc /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                0x00000000000057da                __divsf3x
+                0x00000000000057e0                __divsf3_pse
  .text.avr-libc.fplib
-                0x0000000000005932        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
-                0x0000000000005932                __fixsfsi
+                0x0000000000005896        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                0x0000000000005896                __fixsfsi
  .text.avr-libc.fplib
-                0x0000000000005940       0x5e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
-                0x0000000000005940                __fixunssfsi
+                0x00000000000058a4       0x5e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x00000000000058a4                __fixunssfsi
  .text.avr-libc.fplib
-                0x000000000000599e       0x7a /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
-                0x000000000000599e                __floatunsisf
-                0x00000000000059a2                __floatsisf
+                0x0000000000005902       0x7a /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x0000000000005902                __floatunsisf
+                0x0000000000005906                __floatsisf
  .text.avr-libc.fplib
-                0x0000000000005a18       0x48 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
-                0x0000000000005a18                __fp_cmp
+                0x000000000000597c       0x48 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                0x000000000000597c                __fp_cmp
  .text.avr-libc.fplib
-                0x0000000000005a60        0xc /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
-                0x0000000000005a60                __fp_inf
+                0x00000000000059c4        0xc /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x00000000000059c4                __fp_inf
  .text.avr-libc.fplib
-                0x0000000000005a6c        0x6 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
-                0x0000000000005a6c                __fp_nan
+                0x00000000000059d0        0x6 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x00000000000059d0                __fp_nan
  .text.avr-libc.fplib
-                0x0000000000005a72       0x4e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_powser.o)
-                0x0000000000005a72                __fp_powser
+                0x00000000000059d6       0x4e /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_powser.o)
+                0x00000000000059d6                __fp_powser
  .text.avr-libc.fplib
-                0x0000000000005ac0        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
-                0x0000000000005ac0                __fp_pscA
+                0x0000000000005a24        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x0000000000005a24                __fp_pscA
  .text.avr-libc.fplib
-                0x0000000000005ace        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
-                0x0000000000005ace                __fp_pscB
+                0x0000000000005a32        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x0000000000005a32                __fp_pscB
  .text.avr-libc.fplib
-                0x0000000000005adc       0x22 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
-                0x0000000000005adc                __fp_round
+                0x0000000000005a40       0x22 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x0000000000005a40                __fp_round
  .text.avr-libc.fplib
-                0x0000000000005afe       0x44 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
-                0x0000000000005afe                __fp_split3
-                0x0000000000005b0e                __fp_splitA
+                0x0000000000005a62       0x44 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x0000000000005a62                __fp_split3
+                0x0000000000005a72                __fp_splitA
  .text.avr-libc.fplib
-                0x0000000000005b42        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
-                0x0000000000005b42                __fp_zero
-                0x0000000000005b44                __fp_szero
+                0x0000000000005aa6        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x0000000000005aa6                __fp_zero
+                0x0000000000005aa8                __fp_szero
  .text.avr-libc.fplib
-                0x0000000000005b50        0xa /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
-                0x0000000000005b50                __gtsf2
-                0x0000000000005b50                __gesf2
+                0x0000000000005ab4        0xa /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+                0x0000000000005ab4                __gtsf2
+                0x0000000000005ab4                __gesf2
  .text.avr-libc.fplib
-                0x0000000000005b5a       0x10 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(inverse.o)
-                0x0000000000005b5a                inverse
+                0x0000000000005abe       0x10 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(inverse.o)
+                0x0000000000005abe                inverse
  .text.avr-libc.fplib
-                0x0000000000005b6a        0x8 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
-                0x0000000000005b6a                __mulsf3
+                0x0000000000005ace        0x8 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x0000000000005ace                __mulsf3
  .text.avr-libc.fplib
-                0x0000000000005b72       0xd2 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
-                0x0000000000005b90                __mulsf3x
-                0x0000000000005b96                __mulsf3_pse
+                0x0000000000005ad6       0xd2 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x0000000000005af4                __mulsf3x
+                0x0000000000005afa                __mulsf3_pse
  .text.avr-libc.fplib
-                0x0000000000005c44       0x8c /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(sqrt.o)
-                0x0000000000005c50                sqrt
-                0x0000000000005c50                sqrtf
+                0x0000000000005ba8       0x8c /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(sqrt.o)
+                0x0000000000005bb4                sqrt
+                0x0000000000005bb4                sqrtf
  .text.avr-libc.fplib
-                0x0000000000005cd0        0x8 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(square.o)
-                0x0000000000005cd0                square
+                0x0000000000005c34        0x8 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(square.o)
+                0x0000000000005c34                square
  .text.avr-libc.fplib
-                0x0000000000005cd8        0xa /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(unordsf2.o)
-                0x0000000000005cd8                __unordsf2
+                0x0000000000005c3c        0xa /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(unordsf2.o)
+                0x0000000000005c3c                __unordsf2
  .text.avr-libc.fplib
-                0x0000000000005ce2       0x1c /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_mpack.o)
-                0x0000000000005ce2                __fp_mpack
-                0x0000000000005ce6                __fp_mpack_finite
+                0x0000000000005c46       0x1c /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_mpack.o)
+                0x0000000000005c46                __fp_mpack
+                0x0000000000005c4a                __fp_mpack_finite
  .text.avr-libc.fplib
-                0x0000000000005cfe        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_norm2.o)
-                0x0000000000005cfe                __fp_norm2
+                0x0000000000005c62        0xe /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libm.a(fp_norm2.o)
+                0x0000000000005c62                __fp_norm2
  .text.avr-libc
-                0x0000000000005d0c      0x24a /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(malloc.o)
-                0x0000000000005d0c                malloc
-                0x0000000000005e44                free
+                0x0000000000005c70      0x24a /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x0000000000005c70                malloc
+                0x0000000000005da8                free
  .text.avr-libc
-                0x0000000000005f56        0xa /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(abort.o)
-                0x0000000000005f56                abort
+                0x0000000000005eba        0xa /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(abort.o)
+                0x0000000000005eba                abort
  .text.avr-libc
-                0x0000000000005f60       0x1a /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(memcmp.o)
-                0x0000000000005f60                memcmp
+                0x0000000000005ec4       0x1a /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(memcmp.o)
+                0x0000000000005ec4                memcmp
  .text.avr-libc
-                0x0000000000005f7a       0x12 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(memcpy.o)
-                0x0000000000005f7a                memcpy
-                0x0000000000005f8c                . = ALIGN (0x2)
+                0x0000000000005ede       0x12 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x0000000000005ede                memcpy
+                0x0000000000005ef0                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000005f8c        0x0 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
-                0x0000000000005f8c                exit
-                0x0000000000005f8c                _exit
+ .fini9         0x0000000000005ef0        0x0 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+                0x0000000000005ef0                exit
+                0x0000000000005ef0                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x0000000000005f8c       0x16 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_dtors.o)
-                0x0000000000005f8c                __do_global_dtors
+ .fini6         0x0000000000005ef0       0x16 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_dtors.o)
+                0x0000000000005ef0                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1016,14 +1016,14 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000005fa2        0x4 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000000000005f06        0x4 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000000000005fa6                _etext = .
+                0x0000000000005f0a                _etext = .
 
-.data           0x0000000000800100      0x110 load address 0x0000000000005fa6
+.data           0x0000000000800100      0x110 load address 0x0000000000005f0a
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x0000000000800100       0x21 /tmp/ccsu7vSi.ltrans0.ltrans.o
+ .data          0x0000000000800100       0x21 /tmp/cchTFifx.ltrans0.ltrans.o
  .data          0x0000000000800121        0x6 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(malloc.o)
                 0x0000000000800121                __malloc_heap_end
                 0x0000000000800123                __malloc_heap_start
@@ -1031,35 +1031,35 @@ END GROUP
  *(.data*)
  *(.gnu.linkonce.d*)
  *(.rodata)
- .rodata        0x0000000000800127       0x9c /tmp/ccsu7vSi.ltrans0.ltrans.o
+ .rodata        0x0000000000800127       0x9c /tmp/cchTFifx.ltrans0.ltrans.o
  *(.rodata*)
  .rodata.str1.1
-                0x00000000008001c3       0x4d /tmp/ccsu7vSi.ltrans0.ltrans.o
+                0x00000000008001c3       0x4d /tmp/cchTFifx.ltrans0.ltrans.o
                                          0x5a (size before relaxing)
  *(.gnu.linkonce.r*)
                 0x0000000000800210                . = ALIGN (0x2)
                 0x0000000000800210                _edata = .
                 0x0000000000800210                PROVIDE (__data_end, .)
 
-.bss            0x0000000000800210      0x2f5
+.bss            0x0000000000800210      0x2f3
                 0x0000000000800210                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x0000000000800210      0x2f1 /tmp/ccsu7vSi.ltrans0.ltrans.o
+ .bss           0x0000000000800210      0x2ef /tmp/cchTFifx.ltrans0.ltrans.o
  *(.bss*)
  *(COMMON)
- COMMON         0x0000000000800501        0x4 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(malloc.o)
-                0x0000000000800501                __brkval
-                0x0000000000800503                __flp
-                0x0000000000800505                PROVIDE (__bss_end, .)
-                0x0000000000005fa6                __data_load_start = LOADADDR (.data)
-                0x00000000000060b6                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00000000008004ff        0x4 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x00000000008004ff                __brkval
+                0x0000000000800501                __flp
+                0x0000000000800503                PROVIDE (__bss_end, .)
+                0x0000000000005f0a                __data_load_start = LOADADDR (.data)
+                0x000000000000601a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0000000000800505        0x0
+.noinit         0x0000000000800503        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                        PROVIDE (__noinit_end, .)
-                0x0000000000800505                _end = .
-                0x0000000000800505                PROVIDE (__heap_start, .)
+                0x0000000000800503                _end = .
+                0x0000000000800503                PROVIDE (__heap_start, .)
 
 .eeprom         0x0000000000810000        0x0
  *(.eeprom*)
@@ -1100,7 +1100,7 @@ END GROUP
 
 .comment        0x0000000000000000       0x11
  *(.comment)
- .comment       0x0000000000000000       0x11 /tmp/ccsu7vSi.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x11 /tmp/cchTFifx.ltrans0.ltrans.o
                                          0x12 (size before relaxing)
  .comment       0x0000000000000011       0x12 /home/mikoaj/.platformio/packages/toolchain-atmelavr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/libc.a(malloc.o)
 

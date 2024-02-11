@@ -5,20 +5,16 @@
 #include <array>
 #include <deque>
 #include <pt.h>
+#include <avr/wdt.h>
 
-// #define XINPUT_LIBRARY
-#ifdef XINPUT_LIBRARY
-#include <XInputAdapter.h>
-#include <XInput.h>
-XInputController x;
-JoystickEmulator &&joystick = XInputAdapter(x);
-#endif
-#define JOYSTICK_LIBRARY
-#ifdef JOYSTICK_LIBRARY
+// #include <XInputAdapter.h>
+// #include <XInput.h>
+// XInputController x;
+// JoystickEmulator &&joystick = XInputAdapter(x);
+
 #include <JoystickLibraryAdapter.h>
 Joystick_ j{0x06, JOYSTICK_TYPE_MULTI_AXIS, 0, 0, true, true, true, true, true, true, false, false, false, false, false};
 JoystickEmulator &&joystick = JoystickLibraryAdapter(j);
-#endif
 
 float median(std::deque<float> &currentAxis)
 {
@@ -37,13 +33,13 @@ float median(std::deque<float> &currentAxis)
 // only axis
 
 
-// szablon uzupełnić napisać
-// wstęp motywacja
-// przegląd rozwiązań
-// wykorzystane technologie
-// implementacja
-// uruchuchomienie/intrukcja obsługi
-// wnioski rozwinięcie
+
+
+
+
+
+
+
 
 MPU6050 mpu;
 // MPU control/status vars
@@ -336,6 +332,7 @@ void setup()
   Serial.begin(BAUD);
   while (!Serial)
     ; // wait to open serial
+  wdt_enable(WDTO_4S);
   Serial.println(F("Initializing I2C devices..."));
   mpu.initialize();
   devStatus = mpu.dmpInitialize();
@@ -389,6 +386,7 @@ void setup()
 
 void loop()
 {
+  wdt_reset();
   broadcastMode = (digitalRead(BROADCAST_BUTTON)) ? Mode::NOT_BROADCASTING : Mode::BROADCASTING;
   protothreadMpuUpdate(mpuThread, deviceValues, broadcastMode);
   protothreadJoystickBroadcast(joystickThread, deviceValues, deviceMode, broadcastMode);
